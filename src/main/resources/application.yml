@@ -1,0 +1,19 @@
+server:
+  port: 10000
+
+spring:
+  redis:
+    database: 0
+    timeout: 10000
+    password: redismixiaodong
+    cluster:
+      max-redirects: 5
+      nodes: 121.36.241.137:6001,121.36.241.137:6002,121.36.241.137:6003,121.36.241.137:6004,121.36.241.137:6005,121.36.241.137:6006
+    maxIdle: 300
+    maxTotal: 1000
+    maxWaitMillis: 1000
+    minEvictableIdleTimeMillis: 300000
+    numTestsPerEvictionRun: 1024
+    timeBetweenEvictionRunsMillis: 30000
+    testOnBorrow: true
+    testWhileIdle: true
